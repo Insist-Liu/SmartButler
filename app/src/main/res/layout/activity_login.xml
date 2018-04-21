@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@mipmap/assistant"
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="30dp"
+        app:civ_border_color="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/name_login_et"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/user_name"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="@string/password"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPassword"
+        android:id="@+id/pass_login_et"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/rememberOfPassword"
+            android:id="@+id/keep_password"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/login"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/register_login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/register"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="@string/forgetPassword"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/forget_login_tv"/>
+    </LinearLayout>
+
+</LinearLayout>
